@@ -62,4 +62,6 @@ func (l *Logger) CreateLog(user, content string) {
 		Content: content,
 		Time:    time.Now().Format("2006-01-02 15:04:05"),
 	}
+
+	println("log added succesfully!")
 }
