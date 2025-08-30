@@ -17,6 +17,3 @@ logger := emlog.NewLogger("mylogs", 72, 20) // "mylogs.log" created, 72 hours li
 logger.CreateLog("admin", "internal server error") // {"id":1,"user":"admin","content":"internal server error","time":"2025-08-30 12:00:00"}
 logger.CloseLogger() // logger is closed (for preventing memory leaks)
 ```
-
-
-
