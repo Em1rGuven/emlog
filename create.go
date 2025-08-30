@@ -54,10 +54,10 @@ func (l *Logger) CloseLogger() {
 }
 
 func (l *Logger) CreateLog(user, content string) {
-	l.incrementLastID()
+	id := l.incrementLastID()
 
 	l.LogChannel <- &types.Log{
-		ID:      l.LastID,
+		ID:      id,
 		User:    user,
 		Content: content,
 		Time:    time.Now().Format("2006-01-02 15:04:05"),
